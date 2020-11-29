@@ -1,0 +1,62 @@
+.btn {
+	display: inline-block;
+	min-width: 120px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 1px solid;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	cursor: pointer;
+	padding: 8px 8px 7px;
+	outline: none;
+
+	&--orange {
+		background: linear-gradient(180deg, #FFAE45 0%, #E88300 100%);
+		border-color: #E88300;
+		color: #fff;
+
+		body:not(.body--touch) &:hover {
+			background: #FFA42E;
+		}
+
+		&:focused {
+			background: #FFA42E;
+			box-shadow: 0px 0px 4px #E88300;
+		}
+		
+		&:active {
+			background: linear-gradient(180deg, #E88300 0%, #FFAE45 100%);
+		}
+
+		&.disabled {
+			background: #FFD8A5;
+			border-color: #FFB85C;
+		}
+	}
+
+	&--grey {
+		background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+		border-color: #BFBFBF;
+		color: #414141;
+
+		body:not(.body--touch) &:hover {
+			background: #F5F5F5;
+		}
+		&:focused {
+			background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+			box-shadow: 0px 0px 4px #BFBFBF;
+		}
+		
+		&:active {
+			background: linear-gradient(180deg, #F5F5F5 0%, #E9E9E9 100%);
+		}
+
+		&.disabled {
+			background: #FFD8A5;
+			border-color: #FFB85C;
+		}
+	}
+}

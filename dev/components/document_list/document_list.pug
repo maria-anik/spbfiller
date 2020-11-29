@@ -1,0 +1,13 @@
+include ../button/button
+
+mixin doc_item(list)
+	div.document-list
+		for i in list
+			div.document-list__item
+				div.document-list__item-cont
+					div.document-list__item-name.
+						#{i.name}
+					div.document-list__item-text.
+						Last Edited: #{i.date} 
+				+button("View document", "btn--orange")
+
