@@ -1,8 +1,20 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	font-size: 20px;
 	font-family: Arial;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
 }
-
+.content {
+	width: 100%;
+	max-width: 646px;
+	margin: auto;
+	padding: 15px;
+}
 
 @import "../components/button/button.scss";
 @import "../components/document_list/document_list.scss";

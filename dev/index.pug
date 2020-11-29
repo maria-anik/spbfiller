@@ -4,24 +4,25 @@ include components/button/button
 include components/document_list/document_list
 
 block content
-	p 1. Component “BUTTON”
+	.content
+		p 1. Component “BUTTON”
 
-	+button("Normal", "btn--orange")
-	+button("Hover", "btn--grey")
+		+button("Normal", "btn--orange")
+		+button("Hover", "btn--grey")
 
-	p 2. Component “DOCUMENT LIST” – Desktop
-	
-	+doc_item([
-		{
-			name: "Rundofase",
-			date: "08/08/2020",
-		},
-		{
-			name: "Genco Pura Olive Oil Company",
-			date: "08/08/2020",
-		},
-		{
-			name: "Bubba Gump",
-			date: "08/08/2020",
-		}
-	])
+		p 2. Component “DOCUMENT LIST” – Desktop
+		
+		+doc_item([
+			{
+				name: "Rundofase",
+				date: "08/08/2020",
+			},
+			{
+				name: "Genco Pura Olive Oil Company",
+				date: "08/08/2020",
+			},
+			{
+				name: "Bubba Gump",
+				date: "08/08/2020",
+			}
+		])

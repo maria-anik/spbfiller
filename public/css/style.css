@@ -1,6 +1,26 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-size: 20px;
   font-family: Arial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  max-width: 646px;
+  margin: auto;
+  padding: 15px;
 }
 
 .btn {
@@ -78,10 +98,6 @@ body:not(.body--touch) .btn--grey:hover {
 .btn--grey.disabled {
   background: #FFD8A5;
   border-color: #FFB85C;
-}
-
-.document-list {
-  max-width: 616px;
 }
 
 .document-list__item {
